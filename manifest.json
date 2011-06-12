@@ -2,6 +2,10 @@
   "name": "TumblrLighter",
   "version": "0.0",
   "description": "",
-  "permissions": [
-  ]
+  "background_page": "background.html",
+  "content_scripts": [ {
+    "js": [ "TumblrLighter.js" ],
+    "matches": [ "http://www.tumblr.com/dashboard" ],
+    "run_at": "document_end"
+  } ]
 }

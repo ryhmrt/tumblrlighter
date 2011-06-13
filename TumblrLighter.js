@@ -18,6 +18,7 @@
         removing.push(post);
       } else {
         console.log('tagName: ' + post.tagName);
+        if (post.tagName == 'LI') {
           current = post;
         }
         if (post.offsetTop > y) {

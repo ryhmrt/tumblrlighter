@@ -1,0 +1,21 @@
+Tummblr Ligher
+https://github.com/ryhmrt/tumblrlighter
+
+Copyright (c) 2011 Ryohei Morita, Keisuke Chiba
+
+Introduction
+  This is a Chrome extension it prevents Tumblr Dashboard
+  being huge size when using AutoPatchWork.
+
+Usage
+  Simply add this extension to your Chrome.
+  Then, open your Tumblr dashboard.
+  This extension will remove some top entries from your
+  bashboard to purge some memory when you deep page exploring.
+
+Lisence
+  This software is licensed under The MIT License.
+  http://www.opensource.org/licenses/mit-license.php
+
+Contact
+  Tweet on us. Our nickname is @ryhmrt and @chibamem.

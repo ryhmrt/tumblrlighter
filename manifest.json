@@ -2,6 +2,12 @@
   "name": "Tumblr Lighter",
   "version": "0.1",
   "description": "Prevent Tumblr Dashboard being huge size when using AutoPatchWork.",
+   "icons": {
+      "128": "t128.png",
+      "64": "t64.png",
+      "32": "t32.png",
+      "16": "t16.png"
+   },
   "content_scripts": [ {
     "js": [ "TumblrLighter.js" ],
     "matches": [ "http://www.tumblr.com/dashboard" ],

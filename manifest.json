@@ -2,7 +2,6 @@
   "name": "TumblrLighter",
   "version": "0.0",
   "description": "Prevent Tumblr Dashboard being huge size when using AutoPatchWork.",
-  "background_page": "background.html",
   "content_scripts": [ {
     "js": [ "TumblrLighter.js" ],
     "matches": [ "http://www.tumblr.com/dashboard" ],

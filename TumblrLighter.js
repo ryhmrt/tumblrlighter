@@ -1,6 +1,9 @@
 (function(){
   var posts = document.getElementById('posts');
+  var loading;
   window.addEventListener('AutoPatchWork.append', function(){
+    if (loading) return;
+    loading = true;
     var y = document.body.scrollTop;
     var children = posts.childNodes;
     console.log('posts: ' + children.length);
@@ -34,7 +37,8 @@
         var newY = current.offsetTop - 10;
         console.log('scrollTop: ' + newY);
         document.body.scrollTop = newY;
-      }, 100);
+        loading = false;
+      }, 50);
     } else {
       console.log('no scroll');
     }

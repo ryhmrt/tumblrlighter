@@ -1,6 +1,6 @@
 {
   "name": "Tumblr Lighter",
-  "version": "0.1",
+  "version": "0.1.1",
   "description": "Prevent Tumblr Dashboard being huge size when using AutoPatchWork.",
    "icons": {
       "128": "t128.png",

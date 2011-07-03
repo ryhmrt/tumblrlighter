@@ -1,7 +1,7 @@
 (function(){
   var posts = document.getElementById('posts');
   var loading;
-  window.addEventListener('AutoPatchWork.append', function(){
+  window.addEventListener('AutoPatchWork.DOMNodeInserted', function(){
     if (loading) return;
     loading = true;
     var y = document.body.scrollTop;

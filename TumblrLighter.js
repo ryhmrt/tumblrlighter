@@ -10,21 +10,14 @@
     step1 = true;
     var y = document.body.scrollTop;
     var children = posts.childNodes;
-    console.log('posts: ' + children.length);
     removing = new Array();
     current = null;
     for (var i = 0; i < children.length; i++) {
       var post = children[i];
-      console.log('i: ' + i);
-      console.log('tagName: ' + post.tagName);
-      console.log('id: ' + post.id);
-      console.log('offsetTop: ' + post.offsetTop);
-      console.log('offsetHeight: ' + post.offsetHeight);
       if (post.id === 'new_post') continue;
       if (children.length - i > 50) {
         removing.push(post);
       } else {
-        console.log('tagName: ' + post.tagName);
         if (post.tagName == 'LI' && post.id.match('post_.+')) {
           current = post;
         }
@@ -46,8 +39,7 @@
         posts.removeChild(removing[i]);
       }
       if (current) {
-        console.log('id: ' + current.id);
-        console.log('offsetTop: ' + current.offsetTop);
+        console.log('id of current element: ' + current.id);
         var newY = current.offsetTop - 10;
         console.log('scrollTop: ' + newY);
         document.body.scrollTop = newY;
